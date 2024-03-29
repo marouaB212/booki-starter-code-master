@@ -315,25 +315,22 @@ header:last-child {
 }
 
 
-
 .flex-container .card1 {
-    background-color: white;
-    width: 25%; 
-    height: 240px;
-    padding: 5px; 
+    width: 250.33px;
+    height: 207.25px;
+    gap: 4px;
     border-radius: 20px;
+    opacity: 0px;
+    background-color: white;
     box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1); 
-    box-sizing: border-box; 
-    transition: all 0.3s ease; 
-    margin-top: 15px;
+    padding: 0px, 0px, 15px, 0px
+
 }
 .flex-container .card1 img {
-    width: 100%; 
-    border-radius: 20px 20px 0 0; 
-    height: 80px;
-    gap: 0px;
-    border-radius: 20px 20px 0px 0px;
-    border: 5px 0px 0px 0px;
+    width: 250.33px; 
+    border-radius: 20px 20px 0px 0px; 
+    height: 124px;
+    border: 5px;
     opacity: 0px;
 
 }
@@ -344,13 +341,53 @@ header:last-child {
     flex-wrap: wrap;
     justify-content: space-between;
 }
-
-.flex-container >* {
-    flex-basis: calc(33.33% - 14px); /* Chaque élément occupe environ 33.33% de la largeur du conteneur moins l'espace entre les éléments */
-    margin-bottom: 20px; /* Espacement de 20px en bas */
-    margin-right: 10px; /* Espacement de 20px sur les côtés */
+.flex-container  .card1 {
+    display: flex;
+    justify-content: space-between; /* Pour espacer les éléments horizontalement */
 
 }
+
+.card1 {
+    flex: 1; /* Pour que chaque carte occupe le même espace */
+    margin-right: 20px; /* Espacement entre les cartes */
+}
+.flex-container .card3 {
+    width: 250.33px;
+    height: 207.25px;
+    gap: 4px;
+    border-radius: 20px;
+    opacity: 0px;
+    background-color: white;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1); 
+    padding: 0px, 0px, 15px, 0px
+
+}
+.flex-container .card3 img {
+    width: 250.33px; 
+    border-radius: 20px 20px 0px 0px; 
+    height: 124px;
+    border: 5px;
+    opacity: 0px;
+
+}
+
+.hebergements .card3 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.flex-container  .card3 {
+    display: flex;
+    justify-content: space-between; /* Pour espacer les éléments horizontalement */
+
+}
+
+.card3 {
+    flex: 1; /* Pour que chaque carte occupe le même espace */
+    margin-right: 20px; /* Espacement entre les cartes */
+}
+
 
 
 
@@ -358,15 +395,15 @@ header:last-child {
     width: 297.5px;
     height: 439px;
     gap: 0px;
-    border-radius: 0 0 20px 20px;
+    border-radius: 20px 20px 0px 0px;
     opacity: 0px;
     background-color: white;
     box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1); 
 
 }
 .flex-container .card2 img {
-    width: 297.5px; 
-    border-radius: 20px 20px 0 0; 
+    width: 100%; 
+    border-radius: 20px 20px 0px 0px; 
     height: 380px;
     gap: 0px;
     border: 5px 0px 0px 0px;
@@ -379,5 +416,15 @@ header:last-child {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
+}
+.flex-container {
+    display: flex;
+    justify-content: space-between; /* Pour espacer les éléments horizontalement */
+
+}
+
+.card2 {
+    flex: 1; /* Pour que chaque carte occupe le même espace */
+    margin-right: 40px; /* Espacement entre les cartes */
 }
 
