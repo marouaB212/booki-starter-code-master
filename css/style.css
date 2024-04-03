@@ -17,18 +17,19 @@
     padding-top: 8px;
     padding-bottom: 30px;
     width: 80px;
-    
 }
 
-body {
+.header {
     display: flex;
-    justify-content: center;
-    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
 }
 
-
-
-header {
+.partie {
+    display: flex;
+    align-items: center;
+}
+header  {
 
     display: flex;
     flex-direction: row;
@@ -38,16 +39,15 @@ header {
 
 }
 
-header a:hover{
+header .partie a:hover{
 
     padding: auto;
     border-top: 2px #0065FC solid;
     color: #0065FC;
     padding: 20px 0px 0px 0px;
-    margin-left: 35px;
-    margin-right: 20px;
 
 }
+
 header :first-child {
     margin-right: 40px;
 }
@@ -263,7 +263,6 @@ a {
     gap: 4px;
     border-radius: 20px;
     opacity: 0px;
-    background-color: white;
     box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1); 
     padding: 0px, 0px, 15px, 0px;
     
@@ -454,6 +453,13 @@ a {
 
     .hebergements {
         width: 100%;
+        width: 924px;
+        height: 611.5pxpx;
+        padding: 30px 0px 0px 0px;
+        gap: 30px;
+        border-radius: 15px 0px 0px 0px;
+        opacity: 0px;
+
     }
 
     .populaires {
@@ -478,23 +484,97 @@ a {
     .populaires-cards .card-subtitle {
         font-size: 13px;
     }
+
+    .activites {
+        width: 924px;
+        height: 611.5px;
+        padding: 30px 0px 0px 0px;
+        gap: 30px;
+        border-radius: 15px 0px 0px 0px;
+        opacity: 0px;
+        
+    }
+    .flex-container .card2 {
+        width: 193.5px;
+        height: 270px;
+        border-radius: 20px 0px 0px 0px;
+    }
+    .flex-container .card2 img {
+        width: 100%; 
+        border-radius: 20px 20px 0px 0px; 
+        height: 200px;
+        gap: 0px;
+        border: 5px 0px 0px 0px;
+        opacity: 0px;
+    
+    }
 }
+
 
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
-    /* ... */
+    header {
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* Centrer horizontalement le contenu */
+    }
+
+    .logo {
+        margin-bottom: 20px; /* Marge en bas pour séparer le logo des boutons */
+    }
+
+    .nav {
+        display: flex;
+        flex-direction: row; /* Aligner les boutons côte à côte */
+        justify-content: center; /* Centrer horizontalement */
+        margin-bottom: 20px; /* Marge en bas pour séparer des autres éléments */
+    }
+
+    .nav a {
+        margin: 0 10px; /* Espacement entre les boutons */
+    }
+
+    .search-button strong {
+        display: none; /* Cacher le texte du bouton de recherche */
+    }
+
+    .search-button::after {
+        content: url('chemin/vers/votre/icone-loupe.png'); /* Remplacer par le chemin de votre icône de recherche */
+    }
+
+    #filtres {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between; /* Espacement égal entre les blocs */
+        margin-bottom: 20px; /* Marge en bas pour séparer des autres éléments */
+    }
+
+    #filtres .rounded-button {
+        width: calc(50% - 10px); /* Largeur de 50% avec espacement */
+        margin-bottom: 10px; /* Espacement entre les boutons */
+    }
+
+    .hebergements-and-populaires section {
+        margin-bottom: 20px; /* Marge en bas pour séparer les sections */
+    }
+
+    .hebergements-and-populaires section:first-child {
+        order: 2; /* Afficher la section "Les plus populaires" en premier */
+    }
+    .hebergements .flex-container,
+    .populaires .populaires-cards {
+        display: flex;
+        flex-direction: column; /* Afficher les cartes en colonne */
+    }
+    .hebergements .flex-container a,
+    .populaires .populaires-cards a {
+        width: 100%; /* Utiliser toute la largeur disponible */
+    }
+    .hebergements-and-populaires {
+        flex-direction: column;
+        width: 100%;
+    }
 }
-
-
-
-
-
-
-
-
-
-
-
 
 
 
