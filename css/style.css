@@ -77,7 +77,7 @@ header:last-child {
 }
 .search-button {
     padding: 15px 20px;
-    background-color: blue;
+    background-color:#0065FC;
     color: white;
     border: none;
     border-radius:0px 15px 15px 0px;
@@ -90,7 +90,7 @@ header:last-child {
 
 .rounded-button {
     background-color: white;
-    color: blue;
+    color:#0065FC;
     border: 2px solid #DEEBFF;
     border-radius: 20px;
     padding: 10px 20px;
@@ -136,19 +136,20 @@ header:last-child {
 }
 
 
-/* Style de l'icône d'information */
+
 .blue-icon {
-    color:  #deebff; /* Couleur de l'icône bleue */
-    margin-right: 10px; /* Marge à droite pour séparer l'icône du texte */
+    color:  #deebff; 
+    margin-right: 10px; 
 }
 
 
 .main-container {
-    width: 100%;
-    max-width: 1440px;
-    padding: 0 50px;
-    box-sizing: border-box;
-    margin-left: 30px;
+        width: 100%;
+        max-width: 1440px;
+        padding: 0 50px;
+        box-sizing: border-box;
+        margin: 0 auto; 
+    
 }
 
 a {
@@ -286,13 +287,12 @@ a {
 }
 .flex-container  .card3 {
     display: flex;
-    justify-content: space-between; /* Pour espacer les éléments horizontalement */
-
+    justify-content: space-between; 
 }
 
 .card3 {
-    flex: 1; /* Pour que chaque carte occupe le même espace */
-    margin-right: 20px; /* Espacement entre les cartes */
+    flex: 1; 
+    margin-right: 20px; 
 }
 
 
@@ -375,23 +375,22 @@ a {
 
 .flex-container {
     display: flex;
-    justify-content: space-between; /* Pour espacer les éléments horizontalement */
-
+    justify-content: space-between; /
 }
 
 .card2 {
-    flex: 1; /* Pour que chaque carte occupe le même espace */
-    margin-right: 40px; /* Espacement entre les cartes */
+    flex: 1;
+    margin-right: 40px; 
 }
 
 .card-content {
-    margin-bottom: 20px; /* Ajoute de l'espace en bas */
+    margin-bottom: 20px; 
     margin-left : 14px;
 }
 
 .card-content .card-txt,
 .card-content .card-rating {
-    margin-bottom: 5px; /* Ajoute de l'espace entre les éléments enfants */
+    margin-bottom: 5px;
 }
 
 .activites {
@@ -405,39 +404,38 @@ a {
 .footer-banner {
     display: flex;
     justify-content: space-between;
-    background-color: #f2f2f2; /* Couleur de fond de la bannière */
-    padding: 20px; /* Espacement intérieur de la bannière */
-    height: 150px; /* Hauteur fixe de la div */
-
+    background-color: #f2f2f2; 
+    padding: 20px; 
+    height: 150px; 
 }
 .footer-banner {
-    margin-top: 100px; /* Ajout d'une marge de 25px au-dessus de la div */
+    margin-top: 100px; 
 }
 .footer-section {
-    flex: 1; /* Pour que chaque section prenne le même espace */
-    text-align: left; /* Pour centrer le contenu horizontalement */
+    flex: 1; 
+    text-align: left; 
     margin-left: 50px;
 }
 
 .footer-section h2 {
-    margin-bottom: 20px; /* Espacement sous le titre */
+    margin-bottom: 20px; 
 }
 
 .footer-section a {
     display: block;
-    color: #333; /* Couleur du texte */
-    text-decoration: none; /* Supprimer les soulignements des liens */
+    color: #333; 
+    text-decoration: none;
 }
 
 .footer-container {
-    margin-left: 50px; /* Marge à gauche */
-    margin-right: 50px; /* Marge à droite */
-    background-color: #ffffff; /* Couleur de fond blanche */
+    margin-left: 50px; 
+    margin-right: 50px; 
+    background-color: #ffffff;
 }
 
 .footer-banner-container {
-    margin-top: 25px; /* Marge au-dessus de la bannière */
-    padding: 0 50px; /* Ajout d'une marge de 50px de chaque côté */
+    margin-top: 25px;
+    padding: 0 50px; 
 }
 
 
@@ -446,14 +444,13 @@ a {
 
 /****** Media queries ***********/
 /* Medium devices (tablets, less/equal than 1024px) */
-@media (max-width: 1024px) {
+@media (max-width: 1440px) {
     .hebergements-and-populaires {
         flex-direction: column;
     }
 
     .hebergements {
-        width: 100%;
-        width: 924px;
+        width: auto;
         height: 611.5pxpx;
         padding: 30px 0px 0px 0px;
         gap: 30px;
@@ -463,7 +460,7 @@ a {
     }
 
     .populaires {
-        width: 100%;
+        width:100%;
         margin-top: 50px;
     }
 
@@ -513,66 +510,71 @@ a {
 
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
+
     header {
         display: flex;
         flex-direction: column;
-        align-items: center; /* Centrer horizontalement le contenu */
+        align-items: center; 
     }
 
     .logo {
-        margin-bottom: 20px; /* Marge en bas pour séparer le logo des boutons */
+        margin-bottom: 20px; 
     }
+
+   
 
     .nav {
         display: flex;
-        flex-direction: row; /* Aligner les boutons côte à côte */
-        justify-content: center; /* Centrer horizontalement */
-        margin-bottom: 20px; /* Marge en bas pour séparer des autres éléments */
+        flex-direction: row; 
+        justify-content: center; 
+        margin-bottom: 20px; 
     }
 
     .nav a {
-        margin: 0 10px; /* Espacement entre les boutons */
+        margin: 0 10px; 
     }
 
     .search-button strong {
-        display: none; /* Cacher le texte du bouton de recherche */
+        display: none; 
     }
 
-    .search-button::after {
-        content: url('chemin/vers/votre/icone-loupe.png'); /* Remplacer par le chemin de votre icône de recherche */
-    }
 
     #filtres {
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-between; /* Espacement égal entre les blocs */
-        margin-bottom: 20px; /* Marge en bas pour séparer des autres éléments */
+        justify-content: space-between; 
+        margin-bottom: 20px; 
     }
 
     #filtres .rounded-button {
-        width: calc(50% - 10px); /* Largeur de 50% avec espacement */
-        margin-bottom: 10px; /* Espacement entre les boutons */
+        width: calc(50% - 10px); 
+        margin-bottom: 10px; 
     }
 
     .hebergements-and-populaires section {
-        margin-bottom: 20px; /* Marge en bas pour séparer les sections */
+        margin-bottom: 20px; 
     }
 
     .hebergements-and-populaires section:first-child {
-        order: 2; /* Afficher la section "Les plus populaires" en premier */
+        order: 2; 
     }
     .hebergements .flex-container,
     .populaires .populaires-cards {
         display: flex;
-        flex-direction: column; /* Afficher les cartes en colonne */
+        flex-direction: column; 
     }
     .hebergements .flex-container a,
     .populaires .populaires-cards a {
-        width: 100%; /* Utiliser toute la largeur disponible */
+        width: 100%;
     }
     .hebergements-and-populaires {
         flex-direction: column;
         width: 100%;
+    }
+
+    .activites .activites-title {
+        display: flex;
+        flex-direction: column;
     }
 }
 
