@@ -412,17 +412,19 @@ a {
 .footer-banner {
     margin-top: 100px; 
 }
-.footer-section {
+.footer-infos .footer-hebergement .footer-assitance {
     flex: 1; 
     text-align: left; 
-    margin-left: 50px;
+    margin-left: 30px;
 }
 
-.footer-section h2 {
-    margin-bottom: 20px; 
+
+
+.footer-infos .footer-hebergement .footer-assitance h2 {
+    margin-bottom: 10px; 
 }
 
-.footer-section a {
+.footer-infos .hebergement .footer-assitance a {
     display: block;
     color: #333; 
     text-decoration: none;
@@ -511,7 +513,10 @@ a {
 
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
+    
+  
 
+    
     header :first-child {
         margin-right: 40px;
     }
@@ -531,34 +536,36 @@ a {
         flex-direction: row;
     }
 
-    header .partie a:hover{
-        border-bottom: 2px #0065FC solid;
-        color: #0065FC;
-        border-top: none; 
-        padding: 0;   
-    }
-
+ 
+   
     .logo { 
         padding: 15px;
         margin-left: 15%;
     }
-   
-    nav {
-        width: 100%;
-        margin-bottom: 20px;
-        width: 100%;
-        height: auto;
-        margin: 0;
-        border-bottom: 3px solid var(--fond);
-    }
+   .search-button {
+    width: 49px;
+    height: 49px;
+    left: 286px;
+    padding: 15px 16px 15px 16px;
+    gap: 10px;
+    border-radius: 15px 15px 15px 15px;
+    border: 1px 0px 0px 0px;
+    opacity: 0px;
+    
+   }
+
     nav {
         display: flex;
         flex-direction: row; 
         justify-content: center; 
         margin-bottom: 20px; 
-
     }
-
+    html, body {
+        overflow-x: hidden;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+    }
     #hebergement{
         width: 50%;
     }
@@ -604,9 +611,22 @@ a {
         width: 100%;
     }
 
-    .activites .activites-title {
+    .activites  .flex-container
+     .card2 {
         display: flex;
         flex-direction: column;
+    }
+
+    .footer{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footer-infos, 
+    .footer-hebergement, 
+    .footer-assitance{
+        width: auto; 
+        margin: 10px 0;
     }
 }
 
