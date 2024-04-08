@@ -57,6 +57,7 @@ header:last-child {
 }
 
 
+
 .fa-location-dot {
     font-size: 17px;
     border-bottom: 2px #F2F2F2 solid;
@@ -511,27 +512,58 @@ a {
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
 
-    header {
+    header :first-child {
+        margin-right: 40px;
+    }
+
+    html{
+        overflow-x: hidden;
+    }
+
+    .header {
         display: flex;
         flex-direction: column;
-        align-items: center; 
+        align-items: center;
     }
 
-    .logo {
-        margin-bottom: 20px; 
+    .partie{
+        display: flex;
+        flex-direction: row;
     }
 
+    header .partie a:hover{
+        border-bottom: 2px #0065FC solid;
+        color: #0065FC;
+        border-top: none; 
+        padding: 0;   
+    }
+
+    .logo { 
+        padding: 15px;
+        margin-left: 15%;
+    }
    
-
-    .nav {
+    nav {
+        width: 100%;
+        margin-bottom: 20px;
+        width: 100%;
+        height: auto;
+        margin: 0;
+        border-bottom: 3px solid var(--fond);
+    }
+    nav {
         display: flex;
         flex-direction: row; 
         justify-content: center; 
         margin-bottom: 20px; 
+
     }
 
-    .nav a {
-        margin: 0 10px; 
+    #hebergement{
+        width: 50%;
+    }
+    #activite{
+        width: 50%;
     }
 
     .search-button strong {
